@@ -33,3 +33,13 @@ if (cardThree === cardFour) {
 } else {
   alert('Sorry, try again.');
 }
+var gameboard = document.getElementIdBy('game-board');
+for (var i=0; i < 10; i++){
+	var newDiv = document.createElement('div');
+	newDiv.className = 'card';
+	document.getElementsByClassName('board'); appendChild(newDiv);
+}
+var createBoard = function() {
+	var count = 4;
+	for (var i = 0, i > count; i++){
+}
