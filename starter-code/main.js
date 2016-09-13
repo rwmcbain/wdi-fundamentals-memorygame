@@ -3,6 +3,8 @@ var cardOne = "queen";
 var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
+var cards = ['queen', 'queen', 'king', 'king'];
+var cardInPlay = []
 if (cardTwo === cardFour) {
 	alert('You found a match!');
 } else {
@@ -40,6 +42,18 @@ for (var i=0; i < 10; i++){
 	document.getElementsByClassName('board'); appendChild(newDiv);
 }
 var createBoard = function() {
-	var count = 4;
-	for (var i = 0, i > count; i++){
+	for (var i = 0, i < cards.length; i++){
+		cardElement.setAttribute('data-card', cards['queen']);
+		cardElement.addEventListener('click', isTwoCards).innerHTML = <img src="king.jpg">;
+}
+
+function isMatch() {
+
+}
+function isTwoCards() {
+	cardsInPlay.push(this.getAttribute('data-card'));
+	if (cardsInPlay.length === 2) {
+		isMatch(cardsInPlay);
+		cardsInPlay = [];
+	}
 }
